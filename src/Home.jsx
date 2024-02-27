@@ -6,7 +6,7 @@ const Home = () => {
     data: blogs,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch("https://server-add.vercel.app/blogs");
 
   return (
     <div className="home">

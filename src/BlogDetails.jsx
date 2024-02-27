@@ -7,11 +7,11 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch("https://server-add.vercel.app/blogs/" + id);
   const history = useHistory();
 
   const handleClick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, { method: "DELETE" }).then(
+    fetch("https://server-add.vercel.app/blogs/" + blog.id, { method: "DELETE" }).then(
       () => {
         history.push("/");
       },
